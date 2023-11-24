@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>语言支持</title>
+      <link href="/2023/11/23/%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81/"/>
+      <url>/2023/11/23/%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="偷懒地加入英文页面"><a href="#偷懒地加入英文页面" class="headerlink" title="偷懒地加入英文页面"></a>偷懒地加入英文页面</h1><p><a href="https://zhuanlan.zhihu.com/p/358599353">原文：IdeFun</a></p><h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><h2 id="1-在hexo根目录创建文件夹，我叫en"><a href="#1-在hexo根目录创建文件夹，我叫en" class="headerlink" title="1. 在hexo根目录创建文件夹，我叫en"></a>1. 在hexo根目录创建文件夹，我叫en</h2><h2 id="2-将hexo根目录内容（node-module除外）复制到en文件夹下"><a href="#2-将hexo根目录内容（node-module除外）复制到en文件夹下" class="headerlink" title="2. 将hexo根目录内容（node_module除外）复制到en文件夹下"></a>2. 将hexo根目录内容（node_module除外）复制到en文件夹下</h2><h2 id="3-安装相关插件"><a href="#3-安装相关插件" class="headerlink" title="3. 安装相关插件"></a>3. 安装相关插件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h2 id="4-修改配置文件和主题配置文件，我用的是butterfly"><a href="#4-修改配置文件和主题配置文件，我用的是butterfly" class="headerlink" title="4. 修改配置文件和主题配置文件，我用的是butterfly"></a>4. 修改配置文件和主题配置文件，我用的是butterfly</h2><h3 id="在hexo下"><a href="#在hexo下" class="headerlink" title="在hexo下"></a>在hexo下</h3><p>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 哈哈</span><br><span class="line">subtitle: &#x27;哈哈哈&#x27;</span><br><span class="line">description: &#x27;哈哈哈哈&#x27;</span><br><span class="line">keywords: 哈哈哈哈哈</span><br><span class="line">author: 哈哈</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: </span><br></pre></td></tr></table></figure><p>_config.butterfly.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  主页: / || fas fa-home</span><br><span class="line">  归档: /archives/ || fas fa-archive</span><br><span class="line">  标签: /tags/ || fas fa-tags</span><br><span class="line">  分类: /categories/ || fas fa-folder-open</span><br><span class="line">  链接: /link/ || fas fa-link</span><br><span class="line">  English: /en/ || fas fa-language</span><br><span class="line">  关于: /about/ || fas fa-heart</span><br></pre></td></tr></table></figure><h3 id="在en下"><a href="#在en下" class="headerlink" title="在en下"></a>在en下</h3><p>_config.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: haha</span><br><span class="line">subtitle: &#x27;hahaha&#x27;</span><br><span class="line">description: &#x27;hahahaha&#x27;</span><br><span class="line">keywords: hahahahaha</span><br><span class="line">author: haha</span><br><span class="line">language: en-US</span><br><span class="line">timezone: </span><br></pre></td></tr></table></figure><p>_config.butterfly.yml</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /en/ || fas fa-home</span><br><span class="line">  archive: /en/archives/ || fas fa-archive</span><br><span class="line">  tags: /en/tags/ || fas fa-tags</span><br><span class="line">  categories: /en/categories/ || fas fa-folder-open</span><br><span class="line">  link: /en/link/ || fas fa-link</span><br><span class="line">  Chinese: ../ || fa fa-language</span><br><span class="line">  about: /en/about/ || fas fa-heart</span><br></pre></td></tr></table></figure><h2 id="5-生成与部署"><a href="#5-生成与部署" class="headerlink" title="5. 生成与部署"></a>5. 生成与部署</h2><p>在hexo根目录中</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>在en下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>回到hexo根目录下，将en中生成的public文件拷贝到hexo的public中,部署</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r en/public/. public/en/</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tech </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2023/11/22/hello-world/"/>
       <url>/2023/11/22/hello-world/</url>
